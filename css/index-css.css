@@ -1,0 +1,152 @@
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			padding: 10px;
+			background: #f1f1f1;
+			font-family: "Times New Roman", Times, serif;
+		}
+		.header{
+			text-align: center;
+			padding: 20px;
+			background: white;
+		}
+		.header h1{
+			font-size: 40px;
+		}
+		.logo{
+			position: absolute;
+			margin-left: 5px;
+			max-width: 120px;
+			max-height: 120px;
+		}
+		.bannerLogo{
+			max-width: 120px;
+			max-height: 120px;
+		}
+		#fila{
+			display: flex;
+		}
+		.leftColumn{
+			width: 75%;
+		}
+		.rightColumn{
+			width:25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		.fakeimg{
+			width: 100%;
+			background-color: #aaa;
+		}
+		.aboutUs{
+			width: 100%;
+		}
+		.card{
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+	
+		.topnav {
+			width: 100%;
+			background-color: #333;
+			display: flex;
+		}
+		.dropbtn {
+			font-family: "Times New Roman", Times, serif;
+		    background-color: #333;
+		    color: white;
+		    padding: 16px;
+		    font-size: 18px;
+		    border: none;
+		}
+		.dropdown:hover .dropbtn {
+		    background-color: #3e8e41;
+		    cursor: pointer;
+		}
+		.loginPadre:hover{
+			background-color: #3e8e41;
+		    cursor: pointer;
+		}
+		.loginPadre{
+			overflow: hidden;
+			width: 100px;
+			position: absolute;
+			right: 17px;
+		}
+		.signIn{
+			right: -25px;
+			position: absolute;
+		}
+		/*INFORMACION DEL FOOTER*/
+		.footer{
+			padding: 20px;
+			min-height: 400px;
+			text-align: center;
+			background-color: #ddd;
+			margin-top: 20px;
+			border-radius: 5px;
+		}
+		.info_footer{
+			margin-top: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			height: 300px;
+		}
+		div h3{
+			color: white;
+			font-family: cursive;
+		}
+		.fcentrar{
+			display: inline;
+			padding: 5px;
+		}
+		.mov:hover{
+			background-color: #A59494;
+		}
+
+
+		/*-------------------------------------RESPONSIVE DESIGN--------------------------*/
+
+
+
+
+
+		/* Responsive layout -cuando la pantalla sea menos de 800px, hacer las 2 columnas una debajo de otra.*/
+		@media screen and (max-width: 800px) {
+	    	.leftColumn, .rightColumn,#fila {  
+	    		display: inline-block; 
+        		width: 100%;
+    	    	padding: 0;
+    		}
+		}
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+    		.topnav a {
+        		display: inline-block;
+        		width: 100%;
+    		}
+    	}
+    	/*.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f1f1f1;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #ddd}
+
+		.dropdown:hover{
+		    display: block;
+		}*/

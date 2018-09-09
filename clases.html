@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clases</title>
+
+	<link rel="stylesheet" type="text/css" href="css/clases-css.css">
+
+	<style type="text/css">
+		
+		button{
+			width: 120px;
+			border:0;
+			height: 40px;
+			background-color: #4CC93F;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: #68AA61;
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="head">
+		<div class="centrarImagenes">
+			<img id="logo_principal" src="imagenes/inter.png">
+		</div>
+	</div>
+
+<!--/////////////////////////////NAVIGATION//////////////////////////////-->
+	<div class="topnav">
+		<div class="dropdown">
+		  <button onclick="location.href='index.html'" class="dropbtn">Inicio</button>
+		</div>
+		<div class="dropdown">
+		  <button onclick="location.href='clases.html'" class="dropbtn">Clases</button>
+		</div>
+		<div class="dropdown">
+		  <button class="dropbtn" onclick="location.href='http://bayamonweb.azurewebsites.net/vida-universitaria/deportes/'" >Deportes</button>
+		</div>
+		<div class="dropdown">
+		  <button onclick="location.href='profesores.html'" class="dropbtn">Profesores</button>
+		</div>
+		<div class="dropdown loginPadre" onclick="location.href='login.html'">
+			<button  class="dropbtn log_pad">Login</button>
+		</div>
+	</div>
+	<div class="centerTitle">
+		<p id="title">Seleccione el secuencial</p>
+	</div>
+	
+	<div class="forma" style="width: 100%;">
+		
+		<div style="margin-left: 33%;">	
+			<button onclick="MostrarCompu()"  class="bMostrados">Computadoras</button>
+			<button onclick="MostrarElec()" class="bMostrados">El&eacute;ctrica</button>
+			<button onclick="MostrarMec()" class="bMostrados">Mec&aacute;nica</button>
+			<button onclick="MostrarIndus()" class="bMostrados">Industrial</button>
+		</div>
+			
+	</div>
+
+	<script type="text/javascript">
+		var y = document.getElementsByClassName("bMostrados");
+		
+		function MostrarCompu(){
+			var x = document.getElementById("matri");
+			x.style.display = 'inline';
+		}
+		function MostrarElec(){
+			var x = document.getElementById("matri2");
+			x.style.display = 'inline';
+		}
+		function MostrarMec(){
+			var x = document.getElementById("matri3");
+			x.style.display = 'inline';
+		}
+		function MostrarIndus(){
+			var x = document.getElementById("matri4");
+			x.style.display = 'inline';
+		}
+	</script>
+		
+		<!--INGENIERIA EN COMPU-->
+	<div class="matricula" id="matri">
+		<h2 style="font-family: cursive;">Secuancial Ingenieria En Computadoras:</h2>
+		<table style="width:100%">
+		<caption style="background-color: #897979;">First Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 1500</td>
+		    <td>Pre-calculos</td>
+		    <td>5</td>
+		    <td>Gema 1200 or <br> AMAT (CEEB) >= 550</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1100</td>
+		    <td>Introduction to Engineering</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1101</td>
+		    <td>Literature and Communication: narrative essay</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1201 or <br> GEEN 2311</td>
+		    <td>Development of English through Reading I<br> and Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 <br>451 <= AENG(CEEB) <= 599</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEHS__</td>
+		    <td>2010, 2020, 3020, 3030, 3040 or 4030</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--SEGUNDO SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Second Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2251</td>
+		    <td>Calculus I</td>
+		    <td>5</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>COEN 2210</td>
+		    <td>Introduction to Programming</td>
+		    <td>4</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1102</td>
+		    <td>Literature and Communication: Poetry and theater</td>
+		    <td>3</td>
+		    <td>GESP 1101</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1202 or <br> GEEN 2312</td>
+		    <td>Development of English through Reading II<br> or Literature and  Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 or 2311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1200</td>
+		    <td>Introduction to sustainable Engineering</td>
+		    <td>3</td>
+		    <td>ENGR 1100</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--3er SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Thirt Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2252</td>
+		    <td>Calculus II</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>COEN 2220</td>
+		    <td>Advance Programming</td>
+		    <td>4</td>
+		    <td>COEN 2210</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3311</td>
+		    <td>General Physics for Engineers I</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GESP 2203</td>
+		    <td>World View Through Literature </td>
+		    <td>3</td>
+		    <td>GESP 1102</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEEN 1203 <br> GEEN 2313</td>
+		    <td>Development of English Through Writing or Writing and Research </td>
+		    <td>3</td>
+		    <td>GEEN 1202 or 2312</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--4to SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Fourth Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 3400</td>
+		    <td>Differential Equations</td>
+		    <td>3</td>
+		    <td>MATH 2252</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>COEN 2310</td>
+		    <td>Discrete Mathematics for <br>Computer Engineering</td>
+		    <td>4</td>
+		    <td>COEN 2220</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3312</td>
+		    <td>General Physics for Engineers II</td>
+		    <td>4</td>
+		    <td>MATH 2252 <br>PHYS 3311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ELEN 3301</td>
+		    <td>Electric Circuits I</td>
+		    <td>4</td>
+		    <td>Co-ELEN 3312</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>ELEN 3320</td>
+		    <td>Logic Circuits </td>
+		    <td>4</td>
+		    <td>Co-ELEN 330</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+	</div>
+	<!--INGENIERIA EN Industrial-->
+	<div class="matricula" id="matri4">
+		<h2 style="font-family: cursive;">Secuancial Ingenier&iacute;a Industrial:</h2>
+		<table style="width:100%">
+		<caption style="background-color: #897979;">First Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 1500</td>
+		    <td>Pre-calculos</td>
+		    <td>5</td>
+		    <td>Gema 1200 or <br> AMAT (CEEB) >= 550</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1100</td>
+		    <td>Introduction to Engineering</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1101</td>
+		    <td>Literature and Communication: narrative essay</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1201 or <br> GEEN 2311</td>
+		    <td>Development of English through Reading I<br> and Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 <br>451 <= AENG(CEEB) <= 599</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEHS__</td>
+		    <td>2010, 2020, 3020, 3030, 3040 or 4030</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--***************SEGUNDO SEMESTRE*****************-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Second Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2251</td>
+		    <td>Calculus I</td>
+		    <td>5</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1200</td>
+		    <td>Introduction to Sustainable Engineering</td>
+		    <td>3</td>
+		    <td>ENGR 1100</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>CHEM 2115</td>
+		    <td>General Chemistry for Engineers</td>
+		    <td>4</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1202 or <br> GEEN 2312</td>
+		    <td>Development of English through Reading II<br> or Literature and  Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 or 2311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1102</td>
+		    <td>Literature and Communication: Poetry and Theater</td>
+		    <td>3</td>
+		    <td>ENGR 1100</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--***************3ER SEMESTRE*****************-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Thirt Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>ENGR 3300</td>
+		    <td>Engineering Economy</td>
+		    <td>3</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>MATH 3350</td>
+		    <td>Linear Algebra</td>
+		    <td>3</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 3200</td>
+		    <td>Probability and Statistics</td>
+		    <td>3</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GESP 2203</td>
+		    <td>World View Through Literature </td>
+		    <td>3</td>
+		    <td>GESP 1102</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEEN 1203 or <br> GEEN 2313</td>
+		    <td>Development of English Through Writing or Writing and Research</td>
+		    <td>3</td>
+		    <td>GEEN 1202 or 2312</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--***************4to SEMESTRE*****************-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Fourth Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2252</td>
+		    <td>Calculus II</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>INEN 3411</td>
+		    <td>Operation Research I</td>
+		    <td>3</td>
+		    <td>MATH 3350</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3311</td>
+		    <td>General Physics for Engineers I</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>INEN 3430</td>
+		    <td>Advanced Statistics </td>
+		    <td>3</td>
+		    <td>ENGR 3200</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>INEN 3550</td>
+		    <td>Cost Analysis and Control</td>
+		    <td>3</td>
+		    <td>ENGR 3300</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+	</div>
+	<!--************************Mecanica**********************-->
+	<div class="matricula" id="matri3">
+		<h2 style="font-family: cursive;">Secuancial Ingenier&iacute;a Mec&aacute;nica.</h2>
+		<table style="width:100%">
+		<caption style="background-color: #897979;">First Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 1500</td>
+		    <td>Pre-calculos</td>
+		    <td>5</td>
+		    <td>Gema 1200 or <br> AMAT (CEEB) >= 550</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1100</td>
+		    <td>Introduction to Engineering</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1101</td>
+		    <td>Literature and Communication: narrative essay</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1201 or <br> GEEN 2311</td>
+		    <td>Development of English through Reading I<br> and Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 <br>451 <= AENG(CEEB) <= 599</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEHS__</td>
+		    <td>2010, 2020, 3020, 3030, 3040 or 4030</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--SEGUNDO SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Second Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2251</td>
+		    <td>Calculus I</td>
+		    <td>5</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 2220</td>
+		    <td>Computerized Engineering Graphics</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>CHEM 2115</td>
+		    <td>General Chemistry for Engineers</td>
+		    <td>4</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1202 or <br> GEEN 2312</td>
+		    <td>Development of English through Reading II<br> or Literature and  Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 or 2311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1200</td>
+		    <td>Introduction to sustainable Engineering</td>
+		    <td>3</td>
+		    <td>ENGR 1100</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--3er SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Thirt Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2252</td>
+		    <td>Calculus II</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>MECN 3005</td>
+		    <td>Vectorial Mechanics for Engineers: Static</td>
+		    <td>4</td>
+		    <td>Co-MATH 2252 <br>Co-PHYS 3311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 2203</td>
+		    <td>Vision of the World Literature</td>
+		    <td>3</td>
+		    <td>GESP 1102</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1203 or GEEN 2313</td>
+		    <td>Development of English Through Writing or  <br> Writing and Research</td>
+		    <td>3</td>
+		    <td>GEEN 1202 or 2312</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>MECN 3250</td>
+		    <td>Manufacturing Process Laboratory</td>
+		    <td>1</td>
+		    <td>ENGR 2220</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--4to SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Fourth Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 3400</td>
+		    <td>Differential Equations</td>
+		    <td>3</td>
+		    <td>MATH 2252</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEPE 4040</td>
+		    <td>Ethical Dimension of Contemporary Affair</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3312</td>
+		    <td>General Physics for Engineers II</td>
+		    <td>4</td>
+		    <td>MATH 2252 <br>PHYS 3311</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>ENGR 2130</td>
+		    <td>Introduction to Engineering Computing</td>
+		    <td>3</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 3300</td>
+		    <td>Engineering Economics</td>
+		    <td>3</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>MECN 3010</td>
+		    <td>Vectorial Mechanics for Engineers: Dynamics</td>
+		    <td>3</td>
+		    <td>MECN 3005</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>19</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+	</div>
+	<!--************************ELECTRICA**********************-->
+	<div class="matricula" id="matri2">
+		<h2 style="font-family: cursive;">Secuancial Ingenieria El&eacute;ctrica:</h2>
+		<table style="width:100%">
+		<caption style="background-color: #897979;">First Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 1500</td>
+		    <td>Pre-calculos</td>
+		    <td>5</td>
+		    <td>Gema 1200 or <br> AMAT (CEEB) >= 550</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1100</td>
+		    <td>Introduction to Engineering</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GESP 1101</td>
+		    <td>Literature and Communication: narrative essay</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1201 or <br> GEEN 2311</td>
+		    <td>Development of English through Reading I<br> and Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 <br>451 <= AENG(CEEB) <= 599</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>GEHS__</td>
+		    <td>2010, 2020, 3020, 3030, 3040 or 4030</td>
+		    <td>3</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--SEGUNDO SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Second Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2251</td>
+		    <td>Calculus I</td>
+		    <td>5</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 2130</td>
+		    <td>Introduction to Engineering Computer</td>
+		    <td>3</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>CHEM 2115</td>
+		    <td>General Chemistry for Engineers</td>
+		    <td>4</td>
+		    <td>MATH 1500</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GEEN 1202 or <br> GEEN 2312</td>
+		    <td>Development of English through Reading II<br> or Literature and  Writing</td>
+		    <td>3</td>
+		    <td>For GEEM 1201 or 2311</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ENGR 1200</td>
+		    <td>Introduction to sustainable Engineering</td>
+		    <td>3</td>
+		    <td>ENGR 1100</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>18</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--3er SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Thirt Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 2252</td>
+		    <td>Calculus II</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>MATH 3350</td>
+		    <td>Linear Algebra</td>
+		    <td>3</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3311</td>
+		    <td>General Physics for Engineers I</td>
+		    <td>4</td>
+		    <td>MATH 2251</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>GESP 2203</td>
+		    <td>World View Through Literature</td>
+		    <td>3</td>
+		    <td>GESP 1102</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>EGEEN 1203 or<br> GEEN 2313</td>
+		    <td>Development of English Through Writing or Writing and Research </td>
+		    <td>3</td>
+		    <td>GEEN 1202 or 2312</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+		<!--Fourth SEMESTRE-->
+		<table style="width:100%; margin-top: 40px;">
+		<caption style="background-color: #897979;">Fourth Semestre</caption>
+		  <tr>
+		    <th>Course Number</th>
+		    <th>Title</th> 
+		    <th>Crd.</th>
+		    <th>Requisites</th>
+		    <th>Aproved</th>
+		  </tr>
+		  <tr>
+		    <td>MATH 3400</td>
+		    <td>Differential Equations</td>
+		    <td>3</td>
+		    <td>MATH 2252</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>MATH 3250</td>
+		    <td>Calculus III</td>
+		    <td>3</td>
+		    <td>MATH 2252</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>PHYS 3312</td>
+		    <td>General Physics for Engineers II</td>
+		    <td>4</td>
+		    <td>MATH 2252 <br>PHYS 3311</td>
+		    <td></td>
+		  </tr>
+		   <tr>
+		    <td>ELEN 3301</td>
+		    <td>Electric Circuits I</td>
+		    <td>4</td>
+		    <td>Co-ELEN 3312</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>ELEN 3320</td>
+		    <td>Logic Circuits</td>
+		    <td>4</td>
+		    <td>Co-ELEN 3301</td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td>17</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+	</div>
+
+	<!--/////////////////////////////FOOTER//////////////////////////////-->
+	<div class="footer" style="background-image: url('imagenes/footer.png');">
+		<div class="info_footer">
+			
+			<div>
+				<h3>500 Carr. Dr. John Will Harris</h3>
+				<h3>Bayamón, PR 00957-6257</h3>
+				<h3>(787) 279-1912</h3>
+			</div>
+	      <!--REDES SOCIALES-->
+          <!--FACEBOOK-->
+         	<div class="fcentrar">
+	          <a title="facebook" href="https://www.facebook.com/inter.bayamon/" target="_blank">
+	          <img src="imagenes/fb.ico" alt="facebook"></a>
+          	</div>
+          	<!--Instagram-->
+          	<div class="fcentrar">
+	        	<a title="Instagram" href="https://www.instagram.com/thegrafico07" target="_blank">
+	        	<img src="imagenes/inst.ico" alt="Instagram"></a>
+          	</div>
+          	<!--Twitter-->
+          	<div class="fcentrar">
+	          <a title="Twitter" href="https://twitter.com/interpuertorico?lang=en" target="_blank">
+	          <img src="imagenes/tl.ico" alt="Twitter"></a>
+       	  	</div>	
+		</div>
+	</div>
+	
+</body>
+</html>

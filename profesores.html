@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profesores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/about.css">
+
+        <link rel="stylesheet" type="text/css" href="css/profesores-css.css">
+    </head>
+<body>
+       <!--/////////////////////////////HEADER//////////////////////////////-->
+   <div class="head">
+        <div class="centrarImagenes">
+            <img id="logo_principal" src="imagenes/Bayamon1.jpg">
+        </div>
+    </div>
+
+    <!--/////////////////////////////NAVIGATION//////////////////////////////-->
+    <div class="topnav">
+        <div class="dropdown">
+          <button onclick="location.href='index.html'" class="dropbtn">Inicio</button>
+        </div>
+        <div class="dropdown">
+          <button onclick="location.href='clases.html'" class="dropbtn">Clases</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="location.href='http://bayamonweb.azurewebsites.net/vida-universitaria/deportes/'" >Deportes</button>
+        </div>
+        <div class="dropdown">
+          <button onclick="location.href='profesores.html'" class="dropbtn">Profesores</button>
+        </div>
+        <div class="dropdown loginPadre" onclick="location.href='login.html'">
+
+            
+             <div class="signIn">
+                <figure >
+                    <img class="bannerLogo" src="imagenes/l2.png">
+                </figure>
+            </div>
+            <button  class="dropbtn log_pad">Login</button>
+          
+         
+        </div>
+    </div>
+    
+    <!-- Start Making the Cards of Directive of Board -->
+    <div class="w3-container w3-row-padding profe" style="padding: 120px 16px" id="cards">
+
+        <h1 class="w3-center" style="margin-left: 30px;">Profesores Inter-Bayamon</h1>
+
+
+        <div class="card">
+            <img src="imagenes/male-avatar.png" style="width: 100%">
+            <h1>Jaime Yeckle</h1>
+            <p class="position">Profesor de Ingenerier&iacute;a</p>
+            <p>Computer Engineering</p>
+            <button class="card-buttons" id="myBtn" onclick="openBox('myBtn','myModal', 'close');" >Contact</button>
+             <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <!--AAAAQUIIII ES DONDE VAS A PONER TODA LA INFORMACION QUE QUIERAS-->
+                <p>
+                    Prof. Jaime Yeckle Sanchez<br>
+                    Office G-230 – Tel. 279-1912 ext.2288 <br>
+                    jyeckle@bayamon.inter.edu <br>
+                    Tuesday: 10:50am – 12:00pm/02:20pm – 3:00pm/05:50pm – 07:50pm <br>
+                    Thursday: 02:30pm – 03:00pm/05:20pm – 06:00pm <br>
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imagenes/male-avatar.png" style="width: 100%">
+            <h1>Wilson Lozano</h1>
+            <p class="position">Profesor de Ingenerier&iacute;a</p>
+            <p>Computer Engineering Professor</p>
+            <button class="card-buttons" id="myBtn1" onclick="openBox('myBtn1','myModal2', 'close2');" >Contact</button>
+             <!-- The Modal -->
+            <div id="myModal2" class="modal2">
+
+              <!-- Modal content -->
+              <div class="modal-content2">
+                <span class="close2">&times;</span>
+                <!--AAAAQUIIII ES DONDE VAS A PONER TODA LA INFORMACION QUE QUIERAS-->
+                <p>
+                    Prof. Wilson Lozano Rolon <br>
+                    Office G-235 – Tel. 279-1912 ext.2283<br>
+                    wlozano@bayamon.inter.edu <br>
+                    Monday and Wednesday: 10:00am – 11:30am <br>
+                    Tuesday: 10:00am – 11:30am/03:00pm – 3:30pm  <br>
+                    Thursday: 10:00am – 11:00am <br>
+                </p>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="imagenes/male-avatar.png" style="width: 100%">
+            <h1>Caroline Gonz&aacute;lez</h1>
+            <p class="position">Profesor de Ingenerier&iacute;a</p>
+            <p>Electric Engineering</p>
+            <button class="card-buttons" id="myBtn2" onclick="openBox('myBtn2','myModal3', 'close3');" >Contact</button>
+             <!-- The Modal -->
+            <div id="myModal3" class="modal3">
+
+              <!-- Modal content -->
+              <div class="modal-content3">
+                <span class="close3">&times;</span>
+                <!--AAAAQUIIII ES DONDE VAS A PONER TODA LA INFORMACION QUE QUIERAS-->
+                <p>
+                    Prof. Caroline Gonzalez Rivera <br>
+                    Office G-245 – Tel. 279-1912 ext.2279<br>
+                    cgonzalezr@bayamon.inter.edu <br>
+                    Tuesday: 01:50pm – 03:20pm <br>
+                    Wednesday: 02:20pm – 02:50pm  <br>
+                    Thursday: 08:00am – 09:30am/02:50pm – 04:20pm <br>
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Making the Cards of Directive of Board  Finish-->
+
+    <!--/////////////////////////////FOOTER//////////////////////////////-->
+    <div class="footer" style="background-image: url('imagenes/footer.png');">
+        <div class="info_footer">
+            
+            <div>
+                <h3>500 Carr. Dr. John Will Harris</h3>
+                <h3>Bayamón, PR 00957-6257</h3>
+                <h3>(787) 279-1912</h3>
+            </div>
+          <!--REDES SOCIALES-->
+          <!--FACEBOOK-->
+            <div class="fcentrar">
+              <a title="facebook" href="https://www.facebook.com/inter.bayamon/" target="_blank">
+              <img src="imagenes/fb.ico" alt="facebook"></a>
+            </div>
+            <!--Instagram-->
+            <div class="fcentrar">
+                <a title="Instagram" href="https://www.instagram.com/thegrafico07" target="_blank">
+                <img src="imagenes/inst.ico" alt="Instagram"></a>
+            </div>
+            <!--Twitter-->
+            <div class="fcentrar">
+              <a title="Twitter" href="https://twitter.com/interpuertorico?lang=en" target="_blank">
+              <img src="imagenes/tl.ico" alt="Twitter"></a>
+            </div>  
+        </div>
+    </div>
+
+    
+    <script>
+        var tirar = true;
+        function openBox(id, model, spam){
+
+            var modal = document.getElementById(model);
+
+            // Get the button that opens the modal
+            var btn = document.getElementById(id);
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName(spam);
+
+            if(tirar == true){
+                modal.style.display = "block";
+                tirar = false;
+            }
+
+             // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        
+       
+    </script>
+    
+</body>
+</html>
